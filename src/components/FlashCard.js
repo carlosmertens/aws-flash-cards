@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import RandomWeighted from "./RandomWeighted";
 
 class FlashCard extends Component {
   constructor(props) {
@@ -6,7 +7,12 @@ class FlashCard extends Component {
     this.state = {};
   }
   render() {
-    return <h1>Flash Card Component</h1>;
+    return (
+      <div>
+        <h1>Flash Card Component</h1>
+        <RandomWeighted />
+      </div>
+    );
   }
 }
 
