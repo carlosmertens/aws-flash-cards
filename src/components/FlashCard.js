@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import RandomWeighted from "./RandomWeighted";
+import RegularCard from "./RegularCard";
 
 class FlashCard extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class FlashCard extends Component {
       <div>
         <h1>Flash Card Component</h1>
         <RandomWeighted />
+        <RegularCard />
       </div>
     );
   }
