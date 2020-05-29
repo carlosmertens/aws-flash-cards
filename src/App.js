@@ -16,13 +16,12 @@ class App extends React.Component {
   };
 
   render() {
-    // Console log test
-    console.log(this.state.cardStyle);
+    // console.log(this.state.cardStyle);
     return (
       <div className="App align-items-center d-flex">
         <div className="container">
           <QuizBar userChoice={this.userChoice} />
-          <FlashCard />
+          <FlashCard cardStyle={this.state.cardStyle} />
         </div>
       </div>
     );
