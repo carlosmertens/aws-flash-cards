@@ -23,7 +23,7 @@ class FlashCard extends Component {
           <div
             onClick={this.flip}
             className={`col-sm-6 offset-sm-3 card mb-3 ${this.state.flipClass}`}>
-            <MultiCard />
+            <RegularCard />
           </div>
         </div>
       </div>

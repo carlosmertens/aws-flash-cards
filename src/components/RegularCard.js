@@ -3,7 +3,11 @@ import React from "react";
 function RegularCard(props) {
   return (
     <div>
-      <h3>RegularCard Component</h3>
+      <div className="card-back">AWS Service</div>
+      <div className="card-front">
+        <div>Description</div>
+        <div>Category</div>
+      </div>
     </div>
   );
 }
