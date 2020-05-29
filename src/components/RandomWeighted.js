@@ -1,9 +1,10 @@
 import React from "react";
 
-function RandomWeighted(params) {
+function RandomWeighted(props) {
   return (
     <div>
-      <h3>Random Weighted Component</h3>
+      <div className="card-back">AWS Service</div>
+      <div className="card-front">AWS Category</div>
     </div>
   );
 }
