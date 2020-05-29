@@ -8,11 +8,16 @@ class App extends React.Component {
     super(props);
     this.state = {
       cardStyle: "Random",
+      ready: false,
     };
   }
 
   userChoice = (cardStyle) => {
-    this.setState({ cardStyle });
+    this.setState({ cardStyle, ready: false });
+  };
+
+  nowReady = () => {
+    this.setState({ ready: true });
   };
 
   render() {
@@ -21,7 +26,11 @@ class App extends React.Component {
       <div className="App align-items-center d-flex">
         <div className="container">
           <QuizBar userChoice={this.userChoice} />
-          <FlashCard cardStyle={this.state.cardStyle} />
+          <FlashCard
+            cardStyle={this.state.cardStyle}
+            nowReady={this.nowReady}
+            ready={this.state.ready}
+          />
         </div>
       </div>
     );

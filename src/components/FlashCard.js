@@ -15,7 +15,6 @@ class FlashCard extends Component {
     this.state = {
       flipClass: "",
       questionData: "",
-      ready: false,
     };
   }
 
@@ -42,15 +41,16 @@ class FlashCard extends Component {
     }
     axios.get(path).then((response) => {
       // console.log(response.data);
-      this.setState({ questionData: response.data, ready: true });
+      this.setState({ questionData: response.data });
     });
+    this.props.nowReady();
   };
 
   render() {
-    if (!this.state.ready) {
+    if (!this.props.ready) {
       this.newCard();
       return (
-        <div>
+        <div className="spinner-wrapper">
           <FontAwesomeIcon icon="spinner" size="4x" spin />
         </div>
       );
@@ -65,6 +65,7 @@ class FlashCard extends Component {
     } else {
       card = <RandomWeighted questionData={this.state.questionData} />;
     }
+    console.log(card);
 
     return (
       <div>
