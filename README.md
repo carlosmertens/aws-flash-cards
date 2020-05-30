@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Project: AWS Service Flash Card
+
+## Description
+
+Flipping flash cards with question and answer about AWS services. Projected created with basic React and Axios to pull API database from Instructor Robert Bunch
+
+#### Published App
+
+- [See here](https://carlosmertens.github.io/aws-flash-cards)
+
+#### Tutorial Instructor
+
+- **Robert Bunch** - _Code school instructor, software architect and engineer_
+
+## Author
+
+- **Carlos Mertens** - _Python/Machine Learning Developer | Mertens-Applications_
+
 ## Available Scripts
 
 In the project directory, you can run:
