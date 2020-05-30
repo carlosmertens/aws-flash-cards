@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aws-flash-cards/static/css/main.a268d6a1.chunk.css",
+    "main.js": "/aws-flash-cards/static/js/main.b54ab97d.chunk.js",
+    "main.js.map": "/aws-flash-cards/static/js/main.b54ab97d.chunk.js.map",
+    "runtime-main.js": "/aws-flash-cards/static/js/runtime-main.829ba8d5.js",
+    "runtime-main.js.map": "/aws-flash-cards/static/js/runtime-main.829ba8d5.js.map",
+    "static/js/2.345686e4.chunk.js": "/aws-flash-cards/static/js/2.345686e4.chunk.js",
+    "static/js/2.345686e4.chunk.js.map": "/aws-flash-cards/static/js/2.345686e4.chunk.js.map",
+    "index.html": "/aws-flash-cards/index.html",
+    "precache-manifest.7a935856daeaa2a6ed657ee23d984f9c.js": "/aws-flash-cards/precache-manifest.7a935856daeaa2a6ed657ee23d984f9c.js",
+    "service-worker.js": "/aws-flash-cards/service-worker.js",
+    "static/css/main.a268d6a1.chunk.css.map": "/aws-flash-cards/static/css/main.a268d6a1.chunk.css.map",
+    "static/js/2.345686e4.chunk.js.LICENSE.txt": "/aws-flash-cards/static/js/2.345686e4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.829ba8d5.js",
+    "static/js/2.345686e4.chunk.js",
+    "static/css/main.a268d6a1.chunk.css",
+    "static/js/main.b54ab97d.chunk.js"
+  ]
+}
