@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import RandomWeighted from "./RandomWeighted";
-import RegularCard from "./RegularCard";
 import MultiCard from "./MultiCard";
+import RegularCard from "./RegularCard";
+import RandomWeighted from "./RandomWeighted";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +9,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(faSpinner);
 
 class FlashCard extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.apiHostRoot = `https://aws-services.robertbunch.dev/services`;
     this.state = {
       flipClass: "",
@@ -19,18 +19,19 @@ class FlashCard extends Component {
   }
 
   componentDidMount() {
-    // this.newCard();
+    // this.newCard()
   }
 
   flip = (e) => {
     let newFlip = this.state.flipClass === "" ? "flip" : "";
-    this.setState({ flipClass: newFlip });
+    this.setState({
+      flipClass: newFlip,
+    });
   };
 
   newCard = () => {
     let path;
-    // console.log(this.props.cardStyle);
-
+    console.log(this.props.cardStyle);
     const cardStyle = this.props.cardStyle;
     if (cardStyle === "Random" || cardStyle === "Regular") {
       path = this.apiHostRoot + "/all";
@@ -41,9 +42,11 @@ class FlashCard extends Component {
     }
     axios.get(path).then((response) => {
       // console.log(response.data);
-      this.setState({ questionData: response.data });
+      this.setState({
+        questionData: response.data,
+      });
+      this.props.nowReady();
     });
-    this.props.nowReady();
   };
 
   render() {
@@ -51,7 +54,7 @@ class FlashCard extends Component {
       this.newCard();
       return (
         <div className="spinner-wrapper">
-          <FontAwesomeIcon icon="spinner" size="4x" spin />
+          <FontAwesomeIcon icon="spinner" size="6x" spin />
         </div>
       );
     }
